@@ -4,7 +4,7 @@ const output = document.getElementById('output');
 form.addEventListener('submit', async e => {
   e.preventDefault();
   const city = document.getElementById('city').value;
-  const apiKey = '811523476d605f3f5bc0ba871df9ff34
+  const apiKey = '811523476d605f3f5bc0ba871df9ff34';
 
   output.textContent = 'Loading...';
 
