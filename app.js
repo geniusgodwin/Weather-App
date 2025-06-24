@@ -9,7 +9,7 @@ form.addEventListener('submit', async e => {
   output.textContent = 'Loading...';
 
   try {
-    const res = await fetch(`https://api.openweathermap.org;
+    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
     const data = await res.json();
 
     if (data.cod === 200) {
